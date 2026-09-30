@@ -21,6 +21,10 @@ A native recompilation setup host for Ace Combat 3: Electrosphere (Japan).
 Scaffolded with the New Project Layout. See
 `psxrecomp/docs/GAME_PROJECT_SETUP.md` for the full flow.
 
+<!-- release-standard:bios -->
+**BIOS:** SCPH-5500 (Japan) retail BIOS, 524288 bytes, SHA-256 `9c0421858e217805f4abe18698afea8d5aa36ff0727eb8484944e00eb5e7eadb`. Supply your own dump; releases do not use OpenBIOS.
+<!-- /release-standard:bios -->
+
 <!-- retcomm-readme-launcher -->
 ## RetComM Launcher
 

@@ -6,9 +6,10 @@ name = "Ace Combat 3: Electrosphere (Japan)"
 id = "SLPS-02020"
 players = 1
 exe = "disc/SLPS_020.20"
+disc = "disc/Ace Combat 3 - Electrosphere (Japan, Asia) (Disc 1) (Rev 1).cue"
 discs = [
-    "disc/disc1.cue",
-    "disc/disc2.cue",
+    "disc/Ace Combat 3 - Electrosphere (Japan, Asia) (Disc 1) (Rev 1).cue",
+    "disc/Ace Combat 3 - Electrosphere (Japan, Asia) (Disc 2) (Rev 1).cue",
 ]
 disc_serials = [
     "SLPS-02020",
@@ -22,26 +23,31 @@ stack_base = "0x801FFFF0"
 # Digests are for data Track 01 (first BINARY FILE / TRACK 01).
 [prepare_disc]
 out_dir = "disc"
-bin_name = "disc1.bin"
-cue_name = "disc1.cue"
+bin_name = "Ace Combat 3 - Electrosphere (Japan, Asia) (Disc 1) (Rev 1).bin"
+cue_name = "Ace Combat 3 - Electrosphere (Japan, Asia) (Disc 1) (Rev 1).cue"
 boot_exe = "SLPS_020.20"
-known_sizes = [716287488]
+known_sizes = [716287488, 723813888]
 known_md5 = [
   "30f7dce98b6901290cb26c9baf27268f",
+  "50760963ae8a26ea0188b165f05b33a1",
 ]
 known_sha1 = [
   "8c6d58308eb389a7b18bc213a6d1e23d14fd3c10",
+  "a23e046b1eb695e02d214d269fca70dbe0a437f7",
 ]
 known_crc32 = [
   "ccdda3b5",
+  "b86e0f52",
 ]
 
 [recompiler]
+bios_config = "psxrecomp/bios/SCPH5500.toml"
 seeds = "seeds/ghidra_funcs.txt"
 out_dir = "generated"
 strict = true
 
 [runtime]
+openbios = false
 window_title = "ace-combat-3-electrosphere- Recompiled"
 memcard_dir = "saves"
 

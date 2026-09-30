@@ -66,6 +66,7 @@ exec bash "${PACKAGER}" \
   --recompiler-build "${RECOMPILER_BUILD}" \
   --version-env RELEASE_VERSION \
   --disc-hint "your legally owned Ace Combat 3: Electrosphere (Japan) disc" \
+  --bios-hint "your own SCPH-5500 (Japan) BIOS dump (524288 bytes; SHA-256 9c0421858e217805f4abe18698afea8d5aa36ff0727eb8484944e00eb5e7eadb)" \
   --project-file CMakeLists.txt \
   --project-file game.toml \
   --project-file VERSION \
