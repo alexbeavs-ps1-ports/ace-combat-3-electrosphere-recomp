@@ -61,6 +61,10 @@ default_mode = "digital"
 # Online mount gate: digests + track count + optional TOC fingerprint
 # (see docs/NETPLAY.md).
 [netplay]
+required_disc_fps = [
+    "abe0567b36278051f8343aabb814a4502fe89d0394385c2ae1d8751e956e2dbb",
+    "bb62fd25af7eb4ac47037fadc262d137dbe4af6896d77496c0ea9b38982c7c3b",
+]
 require_cue = true
 required_tracks = 1
 required_disc_fp = "abe0567b36278051f8343aabb814a4502fe89d0394385c2ae1d8751e956e2dbb"
